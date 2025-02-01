@@ -12,7 +12,7 @@
 <tw-storydata name="ダックネスの秘密（翻訳中）" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="33F6E26B-7ACB-4A44-8212-4DF5E247AFCE" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="footer" color="red"></tw-tag><tw-passagedata pid="1" name="Start" tags="" position="800,600" size="100,100">#ダックネス・ワールド
 *(link-rerun:&quot;元ネタのゲーム&quot;)[(open-url:&quot;http://www.firthworks.com/roger/cloak/&quot;)].*（リンク切れ）
 
-あなたはこのカモの暗闇、すなわち「ダックネス」において最も重要なカモになる。 この湖から「水面下の暗闇」の秘密を解き明かすため、その湖を探検することになる。しかし最も幸運なのは、君が調査せずにはいられないくらいの勇敢なアヒルだという事だ！
+あなたはこの「アヒル達の暗闇」、すなわち「ダックネス」において、最も重要なアヒルになるだろう。 この池の持つ「水面下の暗闇」の秘密を解き明かすため、その湖を探検することになる。しかしこの池にとって最も幸運なのは、君が調査せずにはいられないくらい勇敢なアヒルだ、という事だ！
 
 =&gt;&lt;=
 (button:)[[ゲームを開始する-&gt;3]]
@@ -22,7 +22,7 @@
 *何がわかるのか*: このゲームの下部には、各パッセージのHarloweソースコードがこの行の下に表示されます。これはそれがどのようにコーディングされたかを見るため、「フッター（footer）」とタグづけされたパッセージに書き込まれています。 [[詳しくはこちら-&gt;7]].</tw-passagedata><tw-passagedata pid="2" name="Footer" tags="footer" position="600,800" size="100,100">---
 (font:&quot;monospace&quot;)[(v6m-print:(passage:)&#39;s source)]\
 (append:?sidebar)[(icon-fullscreen:)(icon-restart:)]\
-(enchant:?link,(t8n-depart:&quot;dissolve&quot;)+(t8n-time:0.4s))</tw-passagedata><tw-passagedata pid="3" name="2" tags="" position="1000,600" size="100,100">ようこそ。この**キャラエディット**では、 ステータスにスキルポイントを割り振ることができます。ステータス横の [+1]や[-1]をタッチすると、そのステータスの値が増減します。
+(enchant:?link,(t8n-depart:&quot;dissolve&quot;)+(t8n-time:0.4s))</tw-passagedata><tw-passagedata pid="3" name="2" tags="" position="1000,600" size="100,100">この**キャラエディット**では、 ステータスにスキルポイントを割り振ることができます。ステータス横の [+1]や[-1]をタッチすると、そのステータスの値が増減します。
 
 \(set:
    _SP to 21, _DX to 25, _CN to 19, _FL to 20, _PC to 18, _UF to 20,
@@ -57,7 +57,7 @@ _UF _plusLink[(set: _UF to it + 1, _points to it - 1)_rerun] (if:_UF &gt; 0)[_mi
 夏の雨が止むと、草むらを急いで進み、よちよち歩きで[[池-&gt;4]]の端まで向かう。なぜか周囲にアヒルは一羽もいないが、それでもその勇気から、あなたは気に留めず探索するはずだ。</tw-passagedata><tw-passagedata pid="5" name="4" tags="" position="1100,800" size="100,100">####池
 (if:visits is 1)[あなたの |A&gt;[羽]についた雨粒を振り払うために一時停止。それから、岩から勢いよく水面に飛び降りた。
 ]
-あなたはこの広々とした池、ダックネスの中心を堂々と泳ぎ、孔雀の尻尾のような波紋を残していく。[[池の深さ-&gt;6]]はダイビングすればすぐわかる。[[5&lt;-浅瀬]]は西だ。
+あなたはこの広々とした、ダックネスに満ちた池の中心を堂々と泳ぎ、孔雀の尻尾のような波紋を残していく。[[池の深さ-&gt;6]]はダイビングすればすぐわかる。[[5&lt;-浅瀬]]は西だ。
 
 \(click-append:?A)+(t8n:&#39;dissolve&#39;)[ //(冬から春にかけてあなたを温めてきたハンサムな黒い羽毛は、あたたかな太陽光を空気から吸い取ったようだ)//]</tw-passagedata><tw-passagedata pid="6" name="5" tags="" position="1300,800" size="100,100">####浅瀬
 $moulted
@@ -76,7 +76,7 @@ $moulted
 </tw-passagedata><tw-passagedata pid="7" name="6" tags="" position="1300,600" size="100,100">####池の底
 一羽のアヒルは巧みに尻尾を上げ、頭を池の下へと突っ込んでいく。
 
-……ちょっと待った！　目の前にあるのはなんだ！？　それは沈殿している泥の中に何かが突き刺さっていた。水面下の秘密、ついにその秘密が明らかに……。
+……ちょっと待った！　目の前にあるのはなんだ！？　それは沈殿している泥の中に何かが突き刺さっていた。「水面下の秘密」、ついにその秘密が明らかに……。
 
 (size:1.2)[**大量の水草だ！**]
 
@@ -85,8 +85,12 @@ $moulted
 $moulted[
 ##GOOD ENDING
 
-製作者：レオン・アーノット(2020-08-22).
-原作：&quot;闇のマント&quot; 　制作者：ロジャー・フィース
+製作者：レオン・アーノット(2020-08-22)
+原作：&quot;闇のマント&quot; 　製作者：ロジャー・フィース
+翻訳・編集：小木メダマ　(link-repeat:&quot;リンクへ&quot;)[(goto-url:&quot;https://x.com/medamamaman&quot;)]
+使用ソフト：Twine　(link-repeat:&quot;リンクへ&quot;)[(goto-url:&quot;https://twinery.org/&quot;)]
+使用フォーマット（Twine内で操作可能）：Harlone　(link-repeat:&quot;解説リンクへ&quot;)[(goto-url:&quot;https://twine2.neocities.org/&quot;)]
+==&gt;
 ](else:)[
 ##BAD ENDING
 
